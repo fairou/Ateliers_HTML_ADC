@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription</title>
+</head>
+<body> 
+  <h1>
+    Formulaire d'inscription à l'Atelier 5
+</h1>
+
+<!-- <form action="/inscription formulaire" method="post"> -->
+
+<label for="nom">Nom</label>
+<input id="nom" name="nom" required>
+
+<br>
+
+<label for="mail">e-mail</label>
+<input id="mail" name="mail" type="email" required>
+
+<br>
+
+<label for="mdp">Mot de passe</label>
+<input id="mdp" name="mdp" type="password" minlength="8" required>
+
+<br>
+
+<label for="age">Âge</label>
+<input type="number" id="age" name="age" min="18" max="99" required>
+
+<br>
+
+<label for="pays">Pays</label>
+<select id="pays" name="pays">
+<option value="">— Choisir —</option>
+<option value="ma">Maroc</option>
+<option value="fr">France</option>
+</select>
+
+<br>
+
+<p>Niveau :</p>
+<input type="radio" id="deb" name="niveau" value="debutant">
+<label for="deb">Débutant</label>
+<input type="radio" id="conf" name="niveau" value="intermediaire">
+<label for="conf">Intermédiaire</label>
+<input type="radio" id="av" name="niveau" value="avance">
+<label for="av">Avancé</label>
+<br>
+<label for="msg">Message</label>
+<textarea id="msg" name="msg"
+rows="3"></textarea>
+
+<br>
+<input type="checkbox" id="cgu" name="cgu" required>
+<label for="cgu">J'accepte les CGU</label>
+<br>
+<button type="submit"data-testid="btn-inscription">Créer</button>
+</form>
+
+ 
